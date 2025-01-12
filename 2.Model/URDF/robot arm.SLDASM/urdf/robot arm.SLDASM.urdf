@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot arm.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.038474 0.047626 0.066497"
+        rpy="0 0 0" />
+      <mass
+        value="0.014181" />
+      <inertia
+        ixx="5.6168E-06"
+        ixy="-1.2686E-09"
+        ixz="1.085E-09"
+        iyy="1.3583E-05"
+        iyz="-4.3104E-07"
+        izz="8.9876E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="B_Link">
+    <inertial>
+      <origin
+        xyz="0.00061683 0.0022099 0.013874"
+        rpy="0 0 0" />
+      <mass
+        value="0.055527" />
+      <inertia
+        ixx="1.6319E-05"
+        ixy="2.4099E-08"
+        ixz="8.2856E-08"
+        iyy="3.3446E-05"
+        iyz="4.9691E-09"
+        izz="3.086E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/B_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/B_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BJ"
+    type="revolute">
+    <origin
+      xyz="0.038382 -0.10676 0.051092"
+      rpy="0 0 1.5658" />
+    <parent
+      link="base_link" />
+    <child
+      link="B_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="2.01" />
+  </joint>
+  <link
+    name="S_Link">
+    <inertial>
+      <origin
+        xyz="0.064577 -0.0006428 -0.0044202"
+        rpy="0 0 0" />
+      <mass
+        value="0.074894" />
+      <inertia
+        ixx="1.7741E-05"
+        ixy="5.6338E-07"
+        ixz="2.0818E-06"
+        iyy="8.194E-05"
+        iyz="1.0703E-08"
+        izz="8.883E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/S_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/S_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="SJ"
+    type="revolute">
+    <origin
+      xyz="0.038382 -0.10676 0.063392"
+      rpy="-1.5708 -1.5557 -1.5758" />
+    <parent
+      link="base_link" />
+    <child
+      link="S_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="2.01" />
+  </joint>
+  <link
+    name="E_Link">
+    <inertial>
+      <origin
+        xyz="0.073989 0.047337 -0.017744"
+        rpy="0 0 0" />
+      <mass
+        value="0.036475" />
+      <inertia
+        ixx="1.4964E-05"
+        ixy="4.7351E-06"
+        ixz="-1.6026E-06"
+        iyy="3.0336E-05"
+        iyz="4.1041E-07"
+        izz="4.2075E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/E_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/E_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="EJ"
+    type="revolute">
+    <origin
+      xyz="0.03889 -0.20556 0.1525"
+      rpy="1.5708 -0.012159 1.5658" />
+    <parent
+      link="base_link" />
+    <child
+      link="E_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="2.01" />
+  </joint>
+  <link
+    name="W_Link">
+    <inertial>
+      <origin
+        xyz="0.023273 0.013 -0.014326"
+        rpy="0 0 0" />
+      <mass
+        value="0.027884" />
+      <inertia
+        ixx="3.9584E-06"
+        ixy="4.4613E-13"
+        ixz="-4.748E-07"
+        iyy="8.9096E-06"
+        iyz="-3.5765E-13"
+        izz="9.2469E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/W_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/W_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="WJ"
+    type="fixed">
+    <origin
+      xyz="0.01688 -0.2075 0.19376"
+      rpy="1.6544 0 -0.0049831" />
+    <parent
+      link="base_link" />
+    <child
+      link="W_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="2.01" />
+  </joint>
+  <link
+    name="HL_Link">
+    <inertial>
+      <origin
+        xyz="0.011436 0.015 0.0060195"
+        rpy="0 0 0" />
+      <mass
+        value="0.004589" />
+      <inertia
+        ixx="4.3212E-07"
+        ixy="6.3465E-15"
+        ixz="5.8852E-09"
+        iyy="2.305E-07"
+        iyz="2.4915E-15"
+        izz="5.9215E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/HL_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/HL_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HLJ"
+    type="prismatic">
+    <origin
+      xyz="0.054975 -0.22936 0.22004"
+      rpy="-1.5708 -0.083571 1.5658" />
+    <parent
+      link="base_link" />
+    <child
+      link="HL_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0.02"
+      effort="100"
+      velocity="2.01" />
+  </joint>
+  <link
+    name="HR_Link">
+    <inertial>
+      <origin
+        xyz="0.011436 0.015817 0.0085328"
+        rpy="0 0 0" />
+      <mass
+        value="0.004589" />
+      <inertia
+        ixx="4.3212E-07"
+        ixy="1.022E-09"
+        ixz="5.7958E-09"
+        iyy="2.4141E-07"
+        iyz="6.1845E-08"
+        izz="5.8124E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/HR_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot arm.SLDASM/meshes/HR_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="HRJ"
+    type="prismatic">
+    <origin
+      xyz="0.018549 -0.22675 0.19105"
+      rpy="1.7453 -0.083571 1.5658" />
+    <parent
+      link="base_link" />
+    <child
+      link="HR_Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-0.02"
+      upper="0"
+      effort="100"
+      velocity="2.01" />
+  </joint>
+</robot>
