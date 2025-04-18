@@ -6,11 +6,12 @@
 >  视频介绍：[打印中](https://v.douyin.com/iyWBaaXT/)
 > 
 >  视频介绍：[是谁敲了一晚上的代码呀。是我呀累(ノへ`、)](https://v.douyin.com/iyWBVt3w/)
+>
+>  视频介绍：[上位程序搞定](https://v.douyin.com/aAHZoPsLHYs/)
 
-![](3.Docs/1.Images/Tse-Arm1.jpg)
+![](Docs/1.Images/Tse-Arm2.jpg)
 
-![](3.Docs/1.Images/Tse-Arm2.jpg)
-
+![](Docs/1.Images/微信图片_20250418171344.png)
 
 > **感谢以下项目作者：**
 >
