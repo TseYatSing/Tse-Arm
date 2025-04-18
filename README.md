@@ -9,9 +9,9 @@
 >
 >  视频介绍：[上位程序搞定](https://v.douyin.com/aAHZoPsLHYs/)
 
-![](Docs/1.Images/Tse-Arm2.jpg)
+![](Docs/Images/Tse-Arm2.jpg)
 
-![](Docs/1.Images/微信图片_20250418171344.png)
+![](Docs/Images/微信图片_20250418171344.png)
 
 > **感谢以下项目作者：**
 >
