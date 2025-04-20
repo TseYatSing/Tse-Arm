@@ -1,4 +1,4 @@
-# Tse-M3DKA
+# Tse-M3CKA
 > **我的机械臂**
 >
 >  视频介绍：[复刻开源机械臂](https://www.bilibili.com/video/BV1GM4m1R7kN/)
